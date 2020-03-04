@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HEROES } from '../mock-heroes';
 import { Hero } from '../interfaces/hero';
 import { HeroService } from '../services/heroService/hero.service';
 import { MessagesService } from '../services/messagesService/messages.service';
@@ -23,8 +22,6 @@ export class HeroesComponent implements OnInit {
   ngOnInit() {
     this.getHeroes();
   }
-
-  
 
   getHeroes(): void {
     this.heroService.getHeroes()
